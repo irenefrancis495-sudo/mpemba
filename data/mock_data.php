@@ -18,18 +18,22 @@ $products = [
     ['id'=>101,'name'=>'King Burger','price'=>6.99,'stock'=>120,'category'=>'Burgers'],
     ['id'=>102,'name'=>'Chicken Noodles','price'=>5.49,'stock'=>80,'category'=>'Noodles'],
     ['id'=>103,'name'=>'Hot & Sour Soup','price'=>3.99,'stock'=>50,'category'=>'Soups'],
+    ['id'=>104,'name'=>'Veggie Pizza','price'=>8.99,'stock'=>60,'category'=>'Pizzas'],
+    ['id'=>105,'name'=>'Caesar Salad','price'=>4.99,'stock'=>100,'category'=>'Salads'],
 ];
 
 $customers = [
     ['id'=>201,'name'=>'Alice Smith','email'=>'alice@example.com','joined'=>'2024-02-10'],
     ['id'=>202,'name'=>'Bob Johnson','email'=>'bob@example.com','joined'=>'2024-03-21'],
     ['id'=>203,'name'=>'Carla White','email'=>'carla@example.com','joined'=>'2024-04-01'],
+    
 ];
 
 $orders = [
     ['id'=>301,'customer'=>'Alice Smith','total'=>24.99,'status'=>'delivered','date'=>'2024-04-20'],
     ['id'=>302,'customer'=>'Bob Johnson','total'=>12.49,'status'=>'on_delivery','date'=>'2024-04-21'],
     ['id'=>303,'customer'=>'Carla White','total'=>36.00,'status'=>'cancelled','date'=>'2024-04-22'],
+    ['id'=>304,'customer'=>'Alice Smith','total'=>18.50,'status'=>'delivered','date'=>'2024-04-23'],
 ];
 
 function get_stats() { global $stats; return $stats; }

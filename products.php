@@ -14,7 +14,7 @@
             <form method="GET" action="">
                 <input type="text" name="search" placeholder="Search products...">
                 <select name="category">
-                    <option value="">All Categories</option>
+                    <option value="">Allyuewruwehrhwe Categories</option>
                     <!-- PHP: Loop categories -->
                 </select>
                 <button type="submit">Search</button>

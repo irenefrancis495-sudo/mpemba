@@ -13,7 +13,7 @@
         <section class="cart-section">
             <h2>Your Cart</h2>
             <div class="cart-list" id="cart-list">
-                <p>Loading cart...</p>
+                <p>Loading cart...</p
             </div>
         </section>
     </main>

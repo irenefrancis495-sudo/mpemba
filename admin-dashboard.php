@@ -30,6 +30,12 @@
         ['name' => 'Chicken Noodles', 'qty' => 150, 'img' => 'https://cdn-icons-png.flaticon.com/512/2718/2718224.png'],
         ['name' => 'Hot & Sour Soup', 'qty' => 60, 'img' => 'https://cdn-icons-png.flaticon.com/512/1046/1046748.png'],
     ];
+
+    $isActive = $_GET['route'] ?? 'dashboard';
+
+    $getActiveClass = function($route) use ($isActive) {
+        return $isActive === $route ? 'sidebar-active' : 'text-gray-400 hover:text-purple-600 transition';
+    };
     ?>
 
     <aside class="w-64 h-screen bg-white sticky top-0 border-r border-gray-100 flex flex-col py-8">
@@ -38,22 +44,22 @@
         </div>
         
         <nav class="flex-1 pr-6 space-y-1">
-            <a href="admindashboard.php" class="sidebar-active flex items-center px-8 py-3 font-semibold">
+            <a href="admin-dashboard.php" class="<?php echo $getActiveClass('dashboard'); ?> flex items-center px-8 py-3 font-semibold">
                 <i class="fas fa-th-large mr-4"></i> Dashboard
             </a>
-            <a href="#" class="flex items-center px-8 py-3 text-gray-400 hover:text-purple-600 transition">
+            <a href="?route=analytics" class="<?php echo $getActiveClass('analytics'); ?> flex items-center px-8 py-3 font-semibold">
                 <i class="fas fa-chart-line mr-4"></i> Analytics
             </a>
-            <a href="#" class="flex items-center px-8 py-3 text-gray-400 hover:text-purple-600 transition">
+            <a href="?route=orders" class="<?php echo $getActiveClass('orders'); ?> flex items-center px-8 py-3 font-semibold">
                 <i class="fas fa-shopping-bag mr-4"></i> Orders
             </a>
-            <a href="#" class="flex items-center px-8 py-3 text-gray-400 hover:text-purple-600 transition">
+            <a href="?route=customers" class="<?php echo $getActiveClass('customers'); ?> flex items-center px-8 py-3 font-semibold">
                 <i class="fas fa-user mr-4"></i> Customer
             </a>
-            <a href="#" class="flex items-center px-8 py-3 text-gray-400 hover:text-purple-600 transition">
+            <a href="?route=chats" class="<?php echo $getActiveClass('chats'); ?> flex items-center px-8 py-3 font-semibold">
                 <i class="fas fa-comment-dots mr-4"></i> Chats
             </a>
-            <a href="#" class="flex items-center px-8 py-3 text-gray-400 hover:text-purple-600 transition">
+            <a href="?route=wallet" class="<?php echo $getActiveClass('wallet'); ?> flex items-center px-8 py-3 font-semibold">
                 <i class="fas fa-wallet mr-4"></i> Wallet
             </a>
         </nav>

@@ -6,6 +6,10 @@ body {
     color: #222;
 }
 
+:root{
+    --accent: #ff6a00; /* Alibaba-like orange */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,7 +30,7 @@ body {
 .logo a {
     font-size: 2rem;
     font-weight: bold;
-    color: #66a6ff;
+    color: var(--accent);
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -97,6 +101,22 @@ body {
     box-shadow: 0 1px 8px rgba(0,0,0,0.06);
     transition: box-shadow 0.2s;
 }
+.product-card.top-seller {
+    width: 260px;
+    border: 1px solid rgba(255,106,0,0.12);
+}
+.top-seller-badge{
+    background: var(--accent);
+    color: #fff;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    top: -6px;
+    margin-bottom: -8px;
+}
 .product-card:hover {
     box-shadow: 0 4px 16px rgba(102,166,255,0.12);
 }
@@ -111,7 +131,7 @@ body {
     font-size: 1.1rem;
 }
 .product-card .price {
-    color: #66a6ff;
+    color: var(--accent);
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 10px;

@@ -9,17 +9,17 @@ $stats = [
 ];
 
 $top_selling = [
-    ['name' => 'King Burger', 'qty' => 100, 'img' => 'https://cdn-icons-png.flaticon.com/512/3075/3075977.png'],
-    ['name' => 'Chicken Noodles', 'qty' => 150, 'img' => 'https://cdn-icons-png.flaticon.com/512/2718/2718224.png'],
-    ['name' => 'Hot & Sour Soup', 'qty' => 60, 'img' => 'https://cdn-icons-png.flaticon.com/512/1046/1046748.png'],
+    ['id'=>501, 'name' => 'Smartphone X', 'qty' => 320, 'price' => 750000, 'img' => 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60'],
+    ['id'=>502, 'name' => 'Laptop Pro 15"', 'qty' => 210, 'price' => 2200000, 'img' => 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=60'],
+    ['id'=>503, 'name' => '4K LED TV 55"', 'qty' => 180, 'price' => 1800000, 'img' => 'https://images.unsplash.com/photo-1585386959984-a415522b4e9b?w=800&auto=format&fit=crop&q=60'],
 ];
 
 $products = [
-    ['id'=>101,'name'=>'King Burger','price'=>6.99,'stock'=>120,'category'=>'Burgers'],
-    ['id'=>102,'name'=>'Chicken Noodles','price'=>5.49,'stock'=>80,'category'=>'Noodles'],
-    ['id'=>103,'name'=>'Hot & Sour Soup','price'=>3.99,'stock'=>50,'category'=>'Soups'],
-    ['id'=>104,'name'=>'Veggie Pizza','price'=>8.99,'stock'=>60,'category'=>'Pizzas'],
-    ['id'=>105,'name'=>'Caesar Salad','price'=>4.99,'stock'=>100,'category'=>'Salads'],
+    ['id'=>501,'name'=>'Smartphone X','price'=>750000,'stock'=>120,'category'=>'Electronics','img'=>'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop&q=60'],
+    ['id'=>502,'name'=>'Laptop Pro 15"','price'=>2200000,'stock'=>60,'category'=>'Electronics','img'=>'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&auto=format&fit=crop&q=60'],
+    ['id'=>503,'name'=>'4K LED TV 55"','price'=>1800000,'stock'=>30,'category'=>'Electronics','img'=>'https://images.unsplash.com/photo-1585386959984-a415522b4e9b?w=800&auto=format&fit=crop&q=60'],
+    ['id'=>504,'name'=>'Wireless Earbuds','price'=>120000,'stock'=>200,'category'=>'Electronics','img'=>'https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=800&auto=format&fit=crop&q=60'],
+    ['id'=>505,'name'=>'Smartwatch Series 5','price'=>350000,'stock'=>95,'category'=>'Electronics','img'=>'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=800&auto=format&fit=crop&q=60'],
 ];
 
 $customers = [
